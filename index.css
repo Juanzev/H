@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: lovelove ;
+    src: url('love\ story\ ttf.ttf')  format("opentype");
+
+}
+
+body {
+
+    background-image:linear-gradient(to right, #FFE7DB -120px,  #FF859F,   #F05C7E, #BD4863, #a14f62);
+
+}
+
+h1 {
+     padding-top: 20px;
+     text-align: center;
+     font-family: 'lovelove';
+
+}
+
+.painel2{
+    margin: auto;
+    background-color: antiquewhite;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+p{
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: justify;
+
+}

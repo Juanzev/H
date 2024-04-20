@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02/06 happy Birthday Heloá</title>
+    <link rel="shortcut icon" href="pixil-frame-0.png" type="image/x-icon">
+
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('love\ story\ ttf.ttf') format('opentype');
+        }
+        body{
+            background-image: linear-gradient(to right,#EEA3CA,#EF92D3,#EBAAF0,#E964E0,#E8A0C5,#E964E0);
+            margin: auto;
+            overflow-y: hidden;
+            overflow-x: hidden;
+     
+        }
+
+
+        
+
+
+        .painel{
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'love';
+            font-size: 15px;
+        }
+        #sim{
+          
+            height: 70px;
+            width: 150px;
+            background-color: rgb(253, 193, 253);
+            border: rgb(192, 76, 192);
+            border-radius: 12px;
+            color: rgb(138, 6, 109);
+            margin-left: -175px;
+        }
+
+        #nao{
+            position:absolute;
+            height: 70px;
+            width: 150px;
+            background-color: rgb(253, 193, 253);
+            border: rgb(192, 76, 192);
+            border-radius: 12px;
+            color: rgb(138, 6, 109);
+            margin-left: 50px;
+        }
+        .imagens{
+            margin: -90px;
+            height: 15px;
+            width: 10px;
+            margin-left: 20px;
+        
+        }
+
+        .segunda{
+            margin-top: 20px;
+            margin-left: 900px;
+            padding-top: -10px;
+            border-radius: 20px;
+
+        }
+        
+        .imagem1{
+            border-radius: 20px;
+            margin-top: -650px;
+            margin-left: 5px;
+        }
+
+        .imagem2{
+            margin-left: 930px;
+            padding-top: 0px;
+            margin-top: -245px;
+        }
+
+        
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class = "painel">
+        <h1>Feliz Aniversário Heloá</h1>
+        
+        <a href="index2.html" target="_blank">
+            <img height="230px"
+                width="260px"    src="f3009b260fb3aaf55fd6ac31175c1927.gif" alt="">
+        </a>
+
+        <h2>Escolha uma opção</h2>
+
+        <a href="index3.html" target="_blank"><button id="sim"> Você é uma pessoa muito especial, clique aqui para um vídeo em sua homenagem!! </button></a>
+        <button onmouseover="fuja()" id="nao"> clique aqui se você me odeia!! </button>      
+
+
+    </div>
+
+    <div class = "imagens">
+        <img height="180px" width="350px" src="Gvh.gif" alt="dog gif">
+
+    </div>
+
+    <div class = "segunda">
+       <img height="250px" width="400px" src="YaDd.gif" alt="dog">
+    </div>
+    <div class="imagem1">
+        <img height="240px"  src="hel1.jpeg" alt="imagem 1">
+    
+    <div class="imagem2">
+        <img height="240px" width="360px"  src="hel2.jpeg" alt="imagem 2">
+    
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+    </script>
+
+    
+</body>
+</html>
